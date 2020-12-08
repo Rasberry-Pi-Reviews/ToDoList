@@ -12,3 +12,6 @@ right click on "ToDoList" and then press on
 this,will start the app. after you start the app you can
 close the terminal. To close the app, press "Do you want 
 to exit?".
+
+If you want information on updates, look in Changelog.md and 
+the updates and what I have changed will be posted there.
