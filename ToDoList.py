@@ -1,6 +1,10 @@
 import tkinter
 from tkinter import *
 from tkinter import messagebox
+import time
+
+time.sleep(2)
+
 l=[]
 c=1
 def entryError() :
@@ -68,7 +72,7 @@ if (__name__ == "__main__"):
 
   delete = Button(window, text = "Delete", fg = "Black", bg = "orange", command = delete)
 
-  Exit = Button(window, text = "Do you want to exit? Press 2 times to exit", fg = "Black", bg = "Red", command = exit)
+  Exit = Button(window, text = "Do you want to exit?", fg = "Black", bg = "Red", command = exit)
   enterTask.grid(row = 0, column = 2)
   insertField.grid(row = 1, column = 2, ipadx = 50)
   Submit.grid(row = 2, column = 2)
