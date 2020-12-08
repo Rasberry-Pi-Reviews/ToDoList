@@ -8,7 +8,7 @@ keep up on checking in github.
 
 In order to start this app,open file manager, then
 right click on "ToDoList" and then press on 
-"open in terminal". Then type "bash start.sh". By typing
+"open in terminal". Then type "bash start". By typing
 this,will start the app. after you start the app you can
 close the terminal. To close the app, press "Do you want 
 to exit?".
