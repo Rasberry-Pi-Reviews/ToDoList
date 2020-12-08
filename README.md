@@ -15,3 +15,8 @@ to exit?".
 
 If you want information on updates, look in Changelog.md and 
 the updates and what I have changed will be posted there.
+
+To Install:
+
+To install type: git clone https://github.com/Raspberry-Pi-Reviews/ToDoList.git and
+then it will be in "file manager.
