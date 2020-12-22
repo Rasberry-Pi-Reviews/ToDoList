@@ -2,8 +2,6 @@
 
 rm -rf /home/pi/ToDoList
 
-rm -r /home/pi/.local/share/applications/To-Do.desktop
-
 sleep 1
 
 git clone https://github.com/Raspberry-Pi-Reviews/ToDoList.git
@@ -24,7 +22,20 @@ Icon=/home/pi/ToDoList/icons/todo.jpeg
 Terminal=false
 Type=Application
 Categories=Utility;" > ~/.local/share/applications/To-Do.desktop
-X-KeepTerminal=true
+
+sleep 1
+
+echo "Creating Updater Button..."
+mkdir -p ~/.local/share/applications
+echo "[Desktop Entry]
+Name=Simple To-Do List Updater
+Comment=A Simple To-Do List Updater
+Exec=/home/pi/To-Do-List-Updater
+Icon=/home/pi/ToDoList/icons/todo.jpeg
+Terminal=false
+Type=Application
+Categories=Utility;" > ~/.local/share/applications/To-Do-Updater.desktop
+
 sleep 1
 
 echo "Adding Desktop shortcut..."
@@ -39,8 +50,3 @@ sleep 1
 chmod +x /home/pi/ToDoList/start
 
 sleep 1
-
-chmod +x /home/pi/ToDoList/install
-
-sleep 1
-
