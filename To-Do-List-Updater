@@ -1,0 +1,46 @@
+#!/bin/bash
+
+rm -rf /home/pi/ToDoList
+
+rm -r /home/pi/.local/share/applications/To-Do.desktop
+
+sleep 1
+
+git clone https://github.com/Raspberry-Pi-Reviews/ToDoList.git
+
+sleep 1
+
+echo "Installing Simple ToDoList"
+
+sleep 5
+
+echo "Creating menu button..."
+mkdir -p ~/.local/share/applications
+echo "[Desktop Entry]
+Name=Simple To-Do List
+Comment=A Simple To-Do List
+Exec=/home/pi/ToDoList/start
+Icon=/home/pi/ToDoList/icons/todo.jpeg
+Terminal=false
+Type=Application
+Categories=Utility;" > ~/.local/share/applications/To-Do.desktop
+X-KeepTerminal=true
+sleep 1
+
+echo "Adding Desktop shortcut..."
+cp -f ${HOME}/.local/share/applications/To-Do.desktop ${HOME}/Desktop/To-Do.desktop
+
+sleep 1
+
+chmod +x /home/pi/ToDoList/src/ToDoList.py
+
+sleep 1
+
+chmod +x /home/pi/ToDoList/start
+
+sleep 1
+
+chmod +x /home/pi/ToDoList/install
+
+sleep 1
+
