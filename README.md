@@ -17,3 +17,5 @@ To Install:
 
 To install type: git clone https://github.com/Raspberry-Pi-Reviews/ToDoList.git and
 then it will be in "file manager.
+
+Once you are done with that, go in and move the file "To-Do-List-Updater" to /home/pi.
