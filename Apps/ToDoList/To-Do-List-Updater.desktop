@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Simple To-Do List Updater
+Comment=A Simple To-Do List Updater
+Exec=/home/pi/Apps/To-Do-List-Updater
+Icon=/home/pi/Apps/ToDoList/icons/todo.jpeg
+Terminal=true
+Type=Application
+Categories=Utility;
+X-KeepTerminal=true
