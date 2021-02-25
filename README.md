@@ -6,16 +6,21 @@ you can tell you friends about this app.
 I will be adding more and more functions so be sure to
 keep up on checking in github.
 
-To start this app, go to file manager, then go to "ToDoList". Next go to src, 
-then double click on "Simple To-Do list", then press Execute in terminal.
-there will be a youtube tutorial video.
+To start this app type `ToDoList`
 
 If you want information on updates, look in Changelog.md and 
 the updates and what I have changed will be posted there.
 
 To Install:
 
-To install type: git clone https://github.com/Raspberry-Pi-Reviews/ToDoList.git and
-then it will be in "file manager.
+To install type: 
 
-Once you are done with that, go in and move the file "To-Do-List-Updater" to /home/pi.
+```!/bin/bash
+
+git clone https://github.com/Raspberry-Pi-Reviews/ToDoList.git
+
+cd ToDoList/Apps/ToDoList/src/
+
+sudo mv ToDoList.py /usr/local/bin
+
+chmod +x /usr/local/bin/ToDoList.py
