@@ -23,4 +23,4 @@ cd ToDoList/Apps/ToDoList/src/
 
 sudo mv ToDoList.py /usr/local/bin
 
-chmod +x /usr/local/bin/ToDoList.py```
+chmod +x /usr/local/bin/ToDoList.py
