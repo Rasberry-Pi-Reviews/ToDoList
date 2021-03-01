@@ -16,6 +16,4 @@ git clone https://github.com/Raspberry-Pi-Reviews/ToDoList.git
 
 cd ToDoList/ToDoList/src/
 
-sudo mv ToDoList.py /usr/local/bin
-
-chmod +x /usr/local/bin/ToDoList.py
+chmod +x /home/pi/ToDoList/ToDoList/src/ToDoList.py
