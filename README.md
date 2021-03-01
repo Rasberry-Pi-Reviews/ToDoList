@@ -11,8 +11,6 @@ To start this app type `ToDoList`
 If you want information on updates, look in Changelog.md and 
 the updates and what I have changed will be posted there.
 
-To Install:
-
 To install type: 
 
 ```!/bin/bash
