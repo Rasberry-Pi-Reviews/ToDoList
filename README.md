@@ -14,6 +14,6 @@ To install type:
 
 git clone https://github.com/Raspberry-Pi-Reviews/ToDoList.git
 
-cd ToDoList/ToDoList/src/
+cd ToDoList/App/src/
 
-chmod +x /home/pi/ToDoList/ToDoList/src/ToDoList.py
+chmod +x /home/pi/ToDoList/App/src/ToDoList.py
