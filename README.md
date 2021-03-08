@@ -17,3 +17,7 @@ git clone https://github.com/Raspberry-Pi-Reviews/ToDoList.git
 cd ToDoList/App/src/
 
 chmod +x /home/pi/ToDoList/App/src/ToDoList.py
+
+chmod +x /home/pi/ToDoList/App/start
+
+chmod +x /home/pi/ToDoList/Updater
