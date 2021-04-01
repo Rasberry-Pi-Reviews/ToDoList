@@ -1,3 +1,4 @@
+#!/bin/python3
 import tkinter
 from tkinter import *
 from tkinter import messagebox
