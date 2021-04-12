@@ -6,6 +6,37 @@ import time
 
 
 time.sleep(2)
+class MusicPlayer:
+    def __init__(self, window ):
+        window.geometry('428x80'); window.title('Music Player (v1.0)'); window.resizable(0,0)
+        
+        Load = Button(window, text = 'Load',  width = 10, font = ('Times', 10), command = self.load)
+        Play = Button(window, text = 'Play',  width = 10,font = ('Times', 10), command = self.play)
+        Pause = Button(window,text = 'Pause',  width = 10, font = ('Times', 10), command = self.pause)
+        Stop = Button(window ,text = 'Stop',  width = 10, font = ('Times', 10), command = self.stop)
+        Load.place(x=0,y=20);Play.place(x=110,y=20);Pause.place(x=220,y=20);Stop.place(x=330,y=20)
+        self.music_file = False
+        self.playing_state = False
+    def load(self):
+        self.music_file = filedialog.askopenfilename()
+    def play(self):
+        if self.music_file:
+            mixer.init()
+            mixer.music.load(self.music_file)
+            mixer.music.play()
+    def pause(self):
+        if not self.playing_state:
+            mixer.music.pause()
+            self.playing_state=True
+        else:
+            mixer.music.unpause()
+            self.playing_state = False
+    def stop(self):
+        mixer.music.stop()
+        
+root = Tk()
+app= MusicPlayer(root)
+
 
 l=[]
 c=1
@@ -60,15 +91,16 @@ def delete() :
 
 if (__name__ == "__main__"):
   window = Tk()
-  window.configure(background = "black")
-  window.title("To-Do List")
+  window.configure(background = "white")
+  window.title("To-Do List (v1.4)")
+  window.resizable(0,0)
   window.geometry("387x300")
-  enterTask = Label(window, text = "Please enter your task", bg = "cyan")
+  enterTask = Label(window, text = "Please enter your task", bg="white")
   insertField = Entry(window)
 
   Submit = Button(window, text = "Submit", fg = "Black", bg = "light green", command = insertTask)
   TextArea = Text(window, height = 4, width = 36, font = "arial 13")
-  taskNumber = Label(window, text = "Specify below the task number that you want to remove", bg = "cyan")
+  taskNumber = Label(window, text = "Specify below the task number that you want to remove", bg = "white")
 
   nf = Text(window, height = 1, width = 36, font = "arial 13")
 
@@ -83,5 +115,7 @@ if (__name__ == "__main__"):
   nf.grid(row = 5, column = 2)
   delete.grid(row = 6, column = 2, pady = 5)
   Exit.grid(row = 7, column = 2)
+  
+  
 
   window.mainloop()
