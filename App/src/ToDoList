@@ -61,15 +61,15 @@ def delete() :
 
 if (__name__ == "__main__"):
   window = Tk()
-  window.configure(background = "black")
+  window.configure(background = "white")
   window.title("To-Do List")
   window.geometry("387x300")
-  enterTask = Label(window, text = "Please enter your task", bg = "cyan")
+  enterTask = Label(window, text = "Please enter your task", bg = "white")
   insertField = Entry(window)
 
   Submit = Button(window, text = "Submit", fg = "Black", bg = "light green", command = insertTask)
   TextArea = Text(window, height = 4, width = 36, font = "arial 13")
-  taskNumber = Label(window, text = "Specify below the task number that you want to remove", bg = "cyan")
+  taskNumber = Label(window, text = "Specify below the task number that you want to remove", bg = "white")
 
   nf = Text(window, height = 1, width = 36, font = "arial 13")
 
