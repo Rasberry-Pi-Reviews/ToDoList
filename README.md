@@ -1,7 +1,4 @@
-This app does not take up much space.
-
-I will be adding more and more functions so be sure to
-keep up on checking in github.
+# Simple To-Do List
 
 To start this app type `ToDoList`
 
