@@ -2,8 +2,11 @@
 
 To start this app type `ToDoList`
 
-If you want information on updates, look in Changelog.md and 
-the updates and what I have changed will be posted there.
+# How to install
 
-To install type: 
 `wget -qO- https://raw.githubusercontent.com/Raspberry-Pi-Reviews/ToDoList/main/install | bash`
+
+# About
+
+This is the very first app that I have published, I am working on a themes button so you can have multiple themes. 
+
